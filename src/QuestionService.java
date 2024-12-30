@@ -53,12 +53,12 @@ public class QuestionService {
             }
             System.out.println();
 
-            //System.out.println(question.getTrueAnswer().getLetter());
+            System.out.print("YOUR ANSWER -> ");
             Scanner sc = new Scanner(System.in);
             Character answer = sc.nextLine().charAt(0);
 
             if (question.getTrueAnswer().getLetter().equals(answer)) {
-                System.out.println("Your answer is true.");
+                System.out.println("Your answer is correct.");
                 result++;
             }
         }
